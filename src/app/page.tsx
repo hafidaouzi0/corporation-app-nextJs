@@ -1,9 +1,11 @@
+import Hero from "@/components/Hero";
 import Image from "next/image";
+import homePage from "public/home.jpg"
+
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>hello</h1>
-    </main>
-  );
+  return <div>
+    <Hero imgData={homePage} imgAlt="factory car" title="Professional Cloud Hosting"/> 
+    
+    Home Page</div>;
 }
